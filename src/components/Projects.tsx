@@ -19,7 +19,7 @@ export default function Projects() {
         {
             title: "Expiry Date Tracker App",
             describtion: "A shared product tracking app that uses barcode scanning and UPC APIs. Users can add items to a group dashboard and get notified before they expire.",
-            image: "/images/planetaryPositionTrackerSite.jpg",
+            image: "/images/ExpiryDateTrackerAppScreenshot.jpg",
             link: ""
         },
         {
