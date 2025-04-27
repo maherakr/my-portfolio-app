@@ -5,13 +5,13 @@ export default function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    const currentTheme = localStorage.getItem('theme') || 'bumblebee';
     document.documentElement.setAttribute('data-theme', currentTheme);
     setIsDarkMode(currentTheme === 'dark');
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = isDarkMode ? 'light' : 'dark';
+    const newTheme = isDarkMode ? 'bumblebee' : 'dark';
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     setIsDarkMode(!isDarkMode);
