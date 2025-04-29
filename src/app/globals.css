@@ -6,3 +6,16 @@
   themes: bumblebee , dark ;
 }
 
+body {
+  @apply bg-[url('/circuit-board.svg')] bg-repeat bg-transparent;
+}
+
+[data-theme='bumblebee'] {
+  background-image: url('/circuit-board-light.svg');
+}
+
+[data-theme='dark'] {
+  background-image: url('/circuit-board-dark.svg');
+}
+
+
