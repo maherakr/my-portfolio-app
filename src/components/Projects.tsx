@@ -39,7 +39,7 @@ export default function Projects() {
             <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 gap-4">
                 {projectList.map((project, index) => (
 
-                    <div key={index} className="card bg-base-100 w-96 shadow-sm">
+                    <div key={index} className="card bg-base-100 w-96 bg-base-200">
                         <figure className="relative">
 
                             <img

@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="bumblebee" >
       
-      <body className="bg-repeat">
+      <body >
       <Header />
        <Navbar />
         {children}
