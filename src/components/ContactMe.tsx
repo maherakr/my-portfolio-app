@@ -11,7 +11,7 @@ export default function ContactForm() {
             <h2 className="text-4xl font-bold mb-12 text-center">Contact Me</h2>
 
             <div className="flex justify-center">
-                <fieldset className="bg-base-200  rounded-box w-full max-w-3xl p-8 ">
+                <fieldset className="bg-base-200  rounded-box w-full  p-8 ">
                     <legend className="text-lg font-semibold px-2">Get In Touch</legend>
 
                     <form onSubmit={handleSubmit} className="space-y-6">
