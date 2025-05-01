@@ -32,7 +32,7 @@ export default function Projects() {
     ]
 
     return (
-        <section id="experience" className="py-16 px-4 max-w-5xl mx-auto">
+        <section id="projects" className="py-16 px-4 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
 
             <div className="flex justify-center w-full">

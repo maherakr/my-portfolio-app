@@ -27,17 +27,10 @@ export default function Navbar() {
       <div className="navbar-start">
         <button onClick={scrollToTop} className="btn btn-ghost text-xl">Maher A.</button>
         <ul className="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li>
-            <details>
-              <summary>Projects</summary>
-              <ul className="p-2">
-                <li><a>Project 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </details>
-          </li>
-          <li><a>Resume</a></li>
+          <li><a href="#bio">Bio</a></li>
+          <li><a href='#experience'>Experience</a></li>
+          <li><a href='#projects'>Projects</a></li>
+          <li><a href='#contactMe'>Contact Me</a></li>
         </ul>
       </div>
 
