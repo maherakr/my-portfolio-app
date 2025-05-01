@@ -17,10 +17,15 @@ export default function Navbar() {
     setIsDarkMode(!isDarkMode);
   };
 
+  const scrollToTop = () => {
+   document.body.scrollTop = 0; // For Safari
+   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
   return (
     <div className="navbar bg-base-100 shadow-sm fixed z-50">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl">Maher A.</a>
+        <button onClick={scrollToTop} className="btn btn-ghost text-xl">Maher A.</button>
         <ul className="menu menu-horizontal px-1">
           <li><a>Home</a></li>
           <li>
