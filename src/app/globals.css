@@ -17,8 +17,13 @@
   background-image: url('/circuit-board-dark.svg')
   
 }
+[data-theme='dark'] .github-dark {
+  display: block;
+}
 
-
+[data-theme="dark"] .github-light {
+  display: none;
+}
 html {
   scroll-behavior: smooth;
 }
