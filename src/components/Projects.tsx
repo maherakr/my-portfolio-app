@@ -37,7 +37,7 @@ export default function Projects() {
         //6
         {
             title: "Amazon RDS (SQL)",
-            avatar: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original.svg"
+            avatar: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
         },
         //7
         {
@@ -72,7 +72,7 @@ export default function Projects() {
         //13
         {
             title: "Tailwind CSS",
-            avatar: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain.svg"
+            avatar: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
         },
         //14
         {
@@ -154,18 +154,18 @@ export default function Projects() {
 
 
                                 </div>
-                                <div className="card-actions justify-end">
-                                    
-                                    <div className="avatar-group -space-x-6">
-                                        {project.tools.map((tool, toolIndex) =>(
-                                        <div key={toolIndex} className="avatar">
-                                            <div className="w-12 ">
-                                                <img src={tool.avatar} className="bg-white"/>
+                                <div className="card-actions justify-start">
+                                    <div className="avatar-group -space-x-6 hover:space-x-4">
+                                        {project.tools.map((tool, toolIndex) => (
+                                            <div key={toolIndex} className="tooltip tooltip-bottom" data-tip="hello">
+                                                <div className="avatar">
+                                                    <div className="w-12">
+                                                        <img src={tool.avatar} className="bg-white" />
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
                                         ))}
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
