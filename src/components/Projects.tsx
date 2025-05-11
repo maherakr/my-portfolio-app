@@ -107,7 +107,7 @@ export default function Projects() {
         {
             title: "Portfolio Website",
             describtion: "My personal portfolio site — Where I showcase my projects, pretend to be organized and beg for job offers. Built to look better than my sleep schadual and where bugs occasionally evolve into features",
-            image: "/images/planetaryPositionTrackerSite.jpg",
+            image: "/images/portfolioSiteLight.jpg",
             link: "",
             tools: [toolsList[10], toolsList[11], toolsList[12], toolsList[13], toolsList[14]]
         },
@@ -124,6 +124,24 @@ export default function Projects() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full max-w-screen-xl">
                     {projectList.map((project, index) => (
                         <div key={index} className="card bg-base-100 bg-base-200 w-full">
+                            {project.title === "Portfolio Website" ? (
+                                <figure className="diff relative" tabIndex={0}>
+                                    <div className="diff-item-1" role="img" tabIndex={0}>
+                                         <img
+                                    src={project.image}
+                                    alt="screenshot"
+                                    className="w-full h-full object-cover scale-125"
+                                />
+                                    </div>
+                                    <div className="diff-item-2" role="img">
+                                        <img
+                                            alt="screenshot"
+                                            src="/images/portfolioSiteDark.jpg" />
+                                    </div>
+                                    <div className="diff-resizer"></div>
+                                </figure>
+
+                            ) : (    
                             <figure className="relative">
 
                                 <img
@@ -132,7 +150,8 @@ export default function Projects() {
                                     className="w-full h-full object-cover scale-125"
                                 />
                                 <ImageModal image={project.image} modalId={"modal_" + index} />
-                            </figure>
+                            </figure>)}
+                        
                             <div className="card-body">
                                 <h2 className="card-title">{project.title}</h2>
                                 <p>{project.describtion}</p>
@@ -154,16 +173,18 @@ export default function Projects() {
 
 
                                 </div>
-                                <div className="card-actions justify-start">
-                                    <div className="avatar-group -space-x-6 hover:space-x-4">
+
+                                <div className="card-actions overflow-visible">
+                                    <div className="avatar-group -space-x-6 hover:space-x-4 flex flex-wrap overflow-visible">
                                         {project.tools.map((tool, toolIndex) => (
-                                            <div key={toolIndex} className="tooltip tooltip-bottom" data-tip="hello">
+                                            <span
+                                                key={toolIndex} className="tooltip" data-tip={tool.title} >
                                                 <div className="avatar">
                                                     <div className="w-12">
                                                         <img src={tool.avatar} className="bg-white" />
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </span>
                                         ))}
                                     </div>
                                 </div>
