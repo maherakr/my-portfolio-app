@@ -7,10 +7,10 @@ export default function Hero() {
   <div className="hero-content text-center flex flex-col items-center">
     <div className="max-w-xl">
       <h1 className="text-4xl md:text-5xl font-extrabold text-base-content mb-4">
-         Hi, I'm Maher Akremi
+         Hi, I&apos;m Maher Akremi
       </h1>
       <p className="text-xl md:text-2xl font-medium leading-relaxed text-base-content mb-6">
-        I'm passionate about embedded systems and capable of building full-stack websites and desktop applications.
+        I&apos;m passionate about embedded systems and capable of building full-stack websites and desktop applications.
       </p>
       <div className="flex justify-center gap-4">
         <a href="#projects" className="btn btn-primary">View Projects</a>

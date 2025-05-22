@@ -1,6 +1,6 @@
 import React from "react";
 import ImageModal from "./imageModal";
-import { title } from "process";
+
 
 export default function Projects() {
     const toolsList = [
