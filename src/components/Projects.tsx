@@ -123,35 +123,18 @@ export default function Projects() {
             <div className="flex justify-center w-full">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full max-w-screen-xl">
                     {projectList.map((project, index) => (
-                        <div key={index} className="card bg-base-100 bg-base-200 w-full">
-                            {project.title === "Portfolio Website" ? (
-                                <figure className="diff relative" tabIndex={0}>
-                                    <div className="diff-item-1" role="img" tabIndex={0}>
-                                         <img
-                                    src={project.image}
-                                    alt="screenshot"
-                                    className="w-full h-full object-cover scale-125"
-                                />
-                                    </div>
-                                    <div className="diff-item-2" role="img">
-                                        <img
-                                            alt="screenshot"
-                                            src="/images/portfolioSiteDark.jpg" />
-                                    </div>
-                                    <div className="diff-resizer"></div>
+                        <div key={index} className="card bg-base-100 bg-base-200 ">
+                            
+                                <figure className="relative">
+
+                                    <img
+                                        src={project.image}
+                                        alt="screenshot"
+                                        className="w-full h-full object-cover scale-125"
+                                    />
+                                    <ImageModal image={project.image} modalId={"modal_" + index} />
                                 </figure>
 
-                            ) : (    
-                            <figure className="relative">
-
-                                <img
-                                    src={project.image}
-                                    alt="screenshot"
-                                    className="w-full h-full object-cover scale-125"
-                                />
-                                <ImageModal image={project.image} modalId={"modal_" + index} />
-                            </figure>)}
-                        
                             <div className="card-body">
                                 <h2 className="card-title">{project.title}</h2>
                                 <p>{project.describtion}</p>
@@ -195,7 +178,6 @@ export default function Projects() {
                     ))}
                 </div>
             </div>
-
 
         </section>
     );
